@@ -7,15 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  actions : Array<any> = [
-    {name: 'Home', url: '/home', icon:"bi bi-house"},
-    {name: 'Products', url: '/products', icon:"bi bi-box-seam"},
-    {name: 'Add Products', url: '/add-product', icon:"bi bi-plus"},
-  ];
 
-  currentAction:any;
-
-  setCurrentAction(action: any) {
-    this.currentAction = action;
-  }
 }

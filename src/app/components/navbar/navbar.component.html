@@ -1,0 +1,17 @@
+<nav class="p-3">
+  <ul class="nav nav-pills">
+    <li *ngFor="let action of actions">
+      <button routerLink="{{action.url}}"
+              [class]="action == currentAction ? 'btn btn-success ms-1' :'btn btn-outline-success ms-1' "
+              (click)="setCurrentAction(action)"
+      >
+        <i class="{{action.icon}}"></i>
+        {{action.name}}
+      </button>
+    </li>
+    <li *ngIf="laodingService.isLoading$ | async">
+      <div class="spinner-border" role="status">
+      </div>
+    </li>
+  </ul>
+</nav>

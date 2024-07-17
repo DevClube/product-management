@@ -1,24 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "computer",
-      "price": 100,
-      "checked": true
-    },
-    {
-      "id": "2",
-      "name": "phone",
-      "price": 200,
-      "checked": false
-    },
-    {
-      "id": "3",
-      "name": "tablet",
-      "price": 300,
-      "checked": true
-    },
-    {
       "id": "4",
       "name": "watch",
       "price": 400,
@@ -28,7 +10,31 @@
       "id": "7a23",
       "name": "scanner",
       "price": "500",
-      "checked": false
+      "checked": true
+    },
+    {
+      "id": "d145",
+      "name": "laptop",
+      "price": "600",
+      "checked": true
+    },
+    {
+      "name": "smart watch ",
+      "price": "900",
+      "checked": true,
+      "id": "rIHMCNH"
+    },
+    {
+      "name": "iphone",
+      "price": "500",
+      "checked": true,
+      "id": "WZQcFgV"
+    },
+    {
+      "name": "smart phone",
+      "price": "600",
+      "checked": false,
+      "id": "qTwW2Iq"
     }
   ]
 }
