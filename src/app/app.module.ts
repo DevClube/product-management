@@ -13,6 +13,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ErrorHandlerComponent } from './components/error-handler/error-handler.component';
 import {appHttpInterceptor} from "./service/app-http.interceptor";
+import { LoginComponent } from './components/login/login.component';
+import { AdminTemplateComponent } from './components/admin-template/admin-template.component';
+import { NoAuthorizedComponent } from './components/no-authorized/no-authorized.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import {appHttpInterceptor} from "./service/app-http.interceptor";
     EditProductComponent,
     DashboardComponent,
     NavbarComponent,
-    ErrorHandlerComponent
+    ErrorHandlerComponent,
+    LoginComponent,
+    AdminTemplateComponent,
+    NoAuthorizedComponent
   ],
   imports: [
     BrowserModule,
