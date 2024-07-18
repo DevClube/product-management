@@ -12,7 +12,7 @@ This project demonstrates a complete Angular application using JSON Server as th
 7. [Refactoring for Better Data Management](#refactoring-for-better-data-management)
 8. [Implementing an Interceptor](#implementing-an-interceptor)
 9. [Dashboard Component Creation](#dashboard-component-creation)
-10. [Future Plans for Authentication & Presenting](#future-plans-for-authentication--presenting)
+10. [Integrate Authentication](#Integrate-Authentication)
 11. [Screenshots](#screenshots)
 
 ## Setting Up Angular Environment
@@ -23,14 +23,14 @@ This project demonstrates a complete Angular application using JSON Server as th
    ```
 3. Create a new Angular project:
    ```bash
-   ng new angular-project
+   ng new product-management
    ```
    Choose CSS for styling and include Angular's routing system when prompted.
 
 ## Project Structure and Bootstrap
 1. Navigate to the project directory:
    ```bash
-   cd angular-project
+   cd product-management
    ```
 2. Install Bootstrap and Bootstrap Icons:
    ```bash
@@ -51,7 +51,7 @@ This project demonstrates a complete Angular application using JSON Server as th
 ## Component Creation and Data Binding
 1. Generate a new component:
    ```bash
-   ng generate component product
+   ng generate component products
    ```
 2. Use string interpolation and data binding in the component template:
    ```html
@@ -134,8 +134,8 @@ Move state data from individual components into the centralized state service fo
    <div>Total Products: {{ totalProducts }}</div>
    ```
 
-## Future Plans for Authentication & Presenting
-1. Implement authentication with a secure backend using Spring Security.
+## Integrate Authentication
+1. Implement authentication.
 2. Enhance the example with forms, modifying routes, and handling user roles and authentication states within Angular.
 
 ## Screenshots
@@ -153,42 +153,7 @@ this screenshots of the application showing different functionalities like Authe
    ![Dashboard](screenshots/edit-product.png)
 4**Not Authorized Users**
    ![Dashboard](screenshots/not-authorize.png)
-
-## Development Steps
-
-### Step 1: Set Up the Development Environment
-1. Install Node.js and Angular CLI.
-2. Create a new Angular project.
-3. Install Bootstrap and Bootstrap Icons.
-
-### Step 2: Project Structure and Bootstrap
-1. Navigate to the project directory.
-2. Configure Bootstrap and Bootstrap Icons in `angular.json`.
-
-### Step 3: Component Creation and Data Binding
-1. Generate necessary components.
-2. Implement string interpolation and data binding.
-
-### Step 4: Services and HTTP Requests
-1. Generate services for handling HTTP requests.
-2. Implement CRUD operations.
-
-### Step 5: Centralized State Management
-1. Create a centralized state service.
-2. Refactor components to use the state service.
-
-### Step 6: Implementing an Interceptor
-1. Create an HTTP interceptor for managing loading states and errors.
-2. Use the interceptor globally.
-
-### Step 7: Dashboard Component
-1. Generate a dashboard component.
-2. Display metrics using the state service.
-
-### Step 8: Future Enhancements
-1. Implement authentication.
-2. Review progress and discuss improvements.
-
+...
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
@@ -202,7 +167,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/angular-jsonserver-bootstrap.git
+   git clone https://github.com/DevClube/product-management.git
    ```
 2. Install NPM packages:
    ```bash
@@ -214,18 +179,10 @@ To get a local copy up and running follow these simple steps.
    ```
 4. Start JSON Server:
    ```bash
-   json-server --watch db.json --port 8089
+   json-server --watch data/db.json --port 8089
    ```
 
 ## Usage
 
 1. Navigate to `http://localhost:4200/` to view the application.
 2. Use the provided UI to manage products.
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-Feel free to modify the README as per your project requirements and add any additional details necessary.
