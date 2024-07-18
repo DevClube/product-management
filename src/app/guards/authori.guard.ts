@@ -18,7 +18,7 @@ export class Authori implements CanActivate{
 
   canActivate(route: ActivatedRouteSnapshot,
               state: RouterStateSnapshot): MaybeAsync<GuardResult> {
-    if(this.appState.authState.roles.includes(route.data['requiredRoles'])){
+    if(this.appState.authState.roles.includes("ADMIN")){
       return true;
     }else{
       this.router.navigateByUrl("/admin/not-authorize")
